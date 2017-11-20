@@ -1,8 +1,9 @@
 import yaml, os, scp, socket, logging
 
 # Reading in config file for file paths and email info
+from os import path
 
-with open("deployScript/config.yml", 'r') as ymlfile:
+with open(path.join(path.dirname(__file__),"config.yml"), 'r') as ymlfile:
     cfg = yaml.safe_load(ymlfile)
 
 LOG_FILENAME = 'deploy.log'

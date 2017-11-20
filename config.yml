@@ -1,0 +1,10 @@
+Directories:
+    Source: /local/directory/holding/files
+    Server_Dest: /remote/directory/toDrop/files
+
+IP_File:
+    Server: /local/path/to/csv/of/server_ips.csv
+    Deploy_Reg: False
+    Lower_Range: 70
+    Upper_Range: 80
+    Reg_Dest: /remote/director/toDrop/files/onRegisters
